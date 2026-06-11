@@ -1,31 +1,32 @@
-# RedEyeGuard Web-Phishing Detection Extension 
+# RedEye Guard Real-Time Phishing Detection Chrome Extension
 
 Project Overview
 
-RedEye Guard is a Chrome-based phishing detection extension designed to identify, analyze, and classify potentially malicious websites in real time using a hybrid detection engine combining rule-based analysis and adaptive machine learning techniques.
+RedEye Guard is a Chrome-based phishing detection extension designed to identify, analyze, and classify potentially malicious websites in real time using a machine learning-based detection engine.
 
-The system evaluates URLs through structured feature extraction, statistical scoring, and threat pattern recognition to determine the likelihood of phishing or malicious activity. It is designed to operate fully within the browser environment, ensuring fast and lightweight execution without dependency on external cloud services.
+The system evaluates URLs through structured feature extraction, statistical scoring, and learned model weights to determine the likelihood of phishing or malicious activity. It operates fully within the browser environment, ensuring fast and lightweight execution without dependency on external cloud services.
 
-The extension supports an advanced learning mode where detection accuracy can be improved using external model training. In this mode, a Python-based training pipeline can be executed in Windows or Linux environments to process datasets, refine model weights, and enhance classification performance over time.
+The extension supports an advanced learning mode where detection accuracy can be improved using external model training. In this mode, a Python-based training pipeline can be executed in Windows or Linux environments to process datasets, update model parameters, and enhance classification performance over time.
 
-This architecture enables the system to evolve from a static detection engine into an adaptive, continuously improving security model.
+This architecture enables the system to evolve into an adaptive, continuously improving machine learning security model.
 
 Key Features
 Real-time phishing and malicious URL detection
-Hybrid detection engine (rule-based + adaptive AI model)
+Machine learning-based detection engine
 URL feature extraction and entropy analysis
 Brand impersonation and threat pattern recognition
 Lightweight browser-native execution (no backend required)
 Chrome toolbar integration for instant access
 Whitelist and blacklist domain management
-Optional external Python-based model training pipeline
-Cross-platform support (Windows and Linux environments)
+Optional external Python-based training pipeline
+Cross-platform support (Linux,Mac,Windows environments)
+
 Installation Guide
 1. Download the Project
 
 Clone the repository using Git:
 
-git clone https://github.com/YOUR_USERNAME/RedEyeGuardAIPro.git
+git clone .git
 
 Alternatively, download the project as a ZIP file and extract it to a local directory.
 
@@ -44,7 +45,7 @@ This is required to load unpacked extensions manually.
 
 Click on Load unpacked and select the extracted project folder:
 
-RedEyeGuardAIPro/
+RedEyeGuard/
 
 Ensure the folder contains the manifest.json file.
 
@@ -58,29 +59,30 @@ Users can click the extension icon to view detection results and risk scores.
 
 Advanced Training Mode
 
-RedEye Guard AI Pro supports external model training for improved detection accuracy.
+RedEye Guard supports external model training for improved detection accuracy.
 
 In advanced mode:
 
 Python scripts are used to process phishing datasets
-Model weights are updated based on labeled training data
+Model parameters are updated based on labeled training data
 Detection accuracy improves through iterative learning
 Trained outputs can be reintegrated into the extension
 Supported Environments
 Windows (Python 3.8+)
 Linux (Ubuntu/Debian-based distributions recommended)
+MacOs
+
 System Architecture
 
-The extension uses a layered detection approach:
+The extension uses a machine learning pipeline based detection flow:
 
 URL Feature Extraction Layer
-Heuristic Rule Engine
-Adaptive Machine Learning Model
-Threat Pattern Matching System
-Final Risk Scoring Engine
+Machine Learning Prediction Engine
+Threat Pattern Analysis Layer
+Risk Scoring System
 
 The final output is a normalized risk score between 0 and 1, representing the probability of malicious activity.
 
 Notes
 
-This project is intended for cybersecurity research, educational purposes, and experimental AI development. It demonstrates how browser-based extensions can integrate lightweight machine learning models for real-time threat detection.
+This project is intended for cybersecurity research, educational purposes, and experimental machine learning development. It demonstrates how browser-based extensions can integrate lightweight machine learning models for real-time phishing detection.
