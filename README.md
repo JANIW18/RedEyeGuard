@@ -1,7 +1,7 @@
 # RedEye Guard Real-Time Phishing Detection Chrome Extension
 ![RedEye Guard Icon](https://raw.githubusercontent.com/JANIW18/RedEyeGuard/main/icons/icon-128.png)
 
-Project Overview
+**Project Overview**
 
 RedEye Guard is a Chrome-based phishing detection extension designed to identify, analyze, and classify potentially malicious websites in real time using a machine learning-based detection engine.
 
@@ -11,7 +11,9 @@ The extension supports an advanced learning mode where detection accuracy can be
 
 This architecture enables the system to evolve into an adaptive, continuously improving machine learning security model.
 
-Key Features
+
+**Key Features**
+
 
 Real-time phishing and malicious URL detection
 Machine learning-based detection engine
@@ -23,7 +25,10 @@ Whitelist and blacklist domain management
 Optional external Python-based training pipeline
 Cross-platform support (Linux,Mac,Windows environments)
 
-Installation Guide
+
+**Installation Guide**
+
+
 1. Download the Project
 
 Clone the repository using Git:
@@ -59,22 +64,27 @@ The system will automatically begin analyzing visited websites in real time.
 
 Users can click the extension icon to view detection results and risk scores.
 
-Advanced Training Mode
+**Advanced Training Mode**
 
 RedEye Guard supports external model training for improved detection accuracy.
 
 In advanced mode:
 
 Python scripts are used to process phishing datasets
+
 Model parameters are updated based on labeled training data
+
 Detection accuracy improves through iterative learning
+
 Trained outputs can be reintegrated into the extension
+
 Supported Environments
+
 Windows (Python 3.8+)
 Linux (Ubuntu/Debian-based distributions recommended)
 MacOs
 
-System Architecture
+**System Architecture**
 
 The extension uses a machine learning pipeline based detection flow:
 
@@ -85,6 +95,6 @@ Risk Scoring System
 
 The final output is a normalized risk score between 0 and 1, representing the probability of malicious activity.
 
-Notes
+**Notes:**
 
 This project is intended for cybersecurity research, educational purposes, and experimental machine learning development. It demonstrates how browser-based extensions can integrate lightweight machine learning models for real-time phishing detection.
