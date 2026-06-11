@@ -82,7 +82,7 @@ Supported Environments
 
 Windows (Python 3.8+)
 Linux (Ubuntu/Debian-based distributions recommended)
-MacOs
+Macos
 
 **System Architecture**
 
