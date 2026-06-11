@@ -27,7 +27,7 @@ Installation Guide
 
 Clone the repository using Git:
 
-git clone .git
+git clone https://github.com/JANIW18/RedEyeGuard.git
 
 Alternatively, download the project as a ZIP file and extract it to a local directory.
 
