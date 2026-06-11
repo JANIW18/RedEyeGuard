@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>RedEye Guard Pro Phishing Detector</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { width:420px; background:linear-gradient(135deg, #B11226 0%, #8E0E1B 100%); color:rgb(255, 255, 255); font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .container { padding:20px; }
+    .header { text-align:center; margin-bottom:20px; }
+    .logo { font-size:48px; margin-bottom:10px; }
+    .title { font-size:20px; font-weight:800; }
+    .subtitle { font-size:12px; opacity:0.7; margin-top:4px; }
+    .card { background:rgb(210, 15, 15); border-radius:16px; padding:20px; margin-bottom:15px; border:1px solid rgb(195, 18, 18); }
+    .score-large { font-size:64px; font-weight:800; text-align:center; line-height:1.2; }
+    .risk-badge { display:inline-block; padding:4px 12px; border-radius:20px; font-size:12px; font-weight:600; margin-top:5px; }
+    .button { width:100%; padding:14px; border:none; border-radius:12px; font-weight:600; font-size:16px; cursor:pointer; background:linear-gradient(135deg, #C2182B 0%, #7A0C18 100%); color: #ffffff; transition:transform 0.2s; }
+    .button:hover { transform:translateY(-2px); }
+    .feature-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; margin-top:15px; }
+    .feature-item { background:rgb(0, 0, 0); padding:8px; border-radius:8px; font-size:11px; }
+    .feature-name { opacity:0.7; }
+    .feature-value { font-weight:600; float:right; }
+    .good { color:#00d0ff; }
+    .bad { color:#ff0000; }
+    .neutral { color:#ffae00; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo"></div>
+      <div class="title">RedEye Guard Pro</div>
+      <div class="subtitle"style="color:#ffffff; font-weight:600;"> 
+        Real-Time Threat Protection | AI-Powered Risk Analysis
+    </div>
+
+    <div class="card" id="result-card" style="display:none;">
+      <div class="score-large" id="score-display">--</div>
+      <div style="text-align:center; margin:10px 0;" id="risk-display"></div>
+        <div id="risk-message" style="text-align:center; font-size:17px; opacity:100; margin-top:5px; color:#ffffff;"></div>
+      <div id="feature-grid" class="feature-grid"></div>
+    </div>
+
+    <div class="card" id="scan-card">
+      <button id="scanBtn" class="button">🔍 Analyze Current Page</button>
+    </div>
+
+    <div class="card">
+      <div style="display:flex; justify-content:space-between; margin-bottom:15px;">
+        <span>📊 Recent Detections</span>
+        <button id="clearLogs" style="background:rgb(255, 255, 255); border:none; color:rgb(0, 0, 0); padding:5px 12px; border-radius:20px; cursor:pointer;font-weight:600;">Clear</button>
+      </div>
+      <div id="logs" style="max-height:200px; overflow-y:auto;"></div>
+    </div>
+
+    <div style="display:flex; gap:10px;">
+      <button id="settingsBtn" style="flex:1; background:rgb(255, 255, 255); border:none; color:rgb(0, 0, 0); padding:12px; border-radius:12px; cursor:pointer;font-weight:600;">⚙️ Settings</button>
+      
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

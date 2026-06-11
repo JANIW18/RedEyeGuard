@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>RedEye Guard - Settings</title>
+  <style>
+    body { background:linear-gradient(135deg, #C2182B 30%,  #ff0000 100%); color:white; font-family:system-ui; padding:20px; }
+    .container { max-width:600px; margin:0 auto; }
+    .card { background:rgb(0, 0, 0); border-radius:16px; padding:20px; margin-bottom:20px; border:1px solid rgba(255,255,255,0.1); }
+    h2 { margin-top:0; }
+    button { padding:12px 24px; border:none; border-radius:8px; font-weight:600; cursor:pointer; background:linear-gradient(135deg, #C2182B  0%,  #ff0000 100%); color:white; }
+    .threshold { width:100%; margin:10px 0; }
+    .whitelist-item { display:flex; justify-content:space-between; padding:8px; background:rgb(0, 0, 0); border-radius:8px; margin-bottom:5px; }
+    .remove-btn { background:rgb(0, 0, 0); border:none; color:#ff0000; cursor:pointer; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1> <b>⚙️Settings</b> 
+    
+    
+    </h1>
+    
+    <div class="card">
+      <h2>Detection Threshold</h2>
+      <input type="range" id="threshold" min="0.1" max="1.0" step="0.1" value="0.7" class="threshold">
+      <div id="thresholdValue">0.7</div>
+    </div>
+
+    <div class="card">
+      <h2>Whitelist</h2>
+      <div style="display:flex; gap:10px; margin-bottom:15px;">
+        <input type="text" id="newDomain" placeholder="example.com" style="flex:2; padding:8px; background:rgb(0, 0, 0); border:1px solid rgb(0, 0, 0); border-radius:8px; color:rgb(255, 255, 255);">
+        <button id="addBtn">Add</button>
+      </div>
+      <div id="whitelistContainer"></div>
+    </div>
+
+    <div class="card">
+      <h2>Model Info</h2>
+      <p><strong>Dataset:</strong> UCI Phishing Website Dataset</p>
+      <p><strong>Features:</strong> 30 URL and Website Security Features</p>
+      <p><strong>Model:</strong> XGBoost Machine Learning Classifier</p>
+      <p><strong>Training Samples:</strong> 11,055 Websites</p>
+      <p><strong>Last trained:</strong> <span id="lastTrained"> Pre-Trained Model</span></p>
+      <button id="saveSettings">Save</button>
+    </div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
