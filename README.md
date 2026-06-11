@@ -11,6 +11,7 @@ The extension supports an advanced learning mode where detection accuracy can be
 This architecture enables the system to evolve into an adaptive, continuously improving machine learning security model.
 
 Key Features
+
 Real-time phishing and malicious URL detection
 Machine learning-based detection engine
 URL feature extraction and entropy analysis
