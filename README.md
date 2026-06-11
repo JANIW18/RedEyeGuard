@@ -1,5 +1,5 @@
 # RedEye Guard Real-Time Phishing Detection Chrome Extension
-
+![RedEye Guard Icon](https://raw.githubusercontent.com/JANIW18/RedEyeGuard/main/icons/icon-128.png)
 Project Overview
 
 RedEye Guard is a Chrome-based phishing detection extension designed to identify, analyze, and classify potentially malicious websites in real time using a machine learning-based detection engine.
